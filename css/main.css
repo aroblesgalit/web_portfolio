@@ -9,9 +9,24 @@ html {
   }
 
 body {
+    height: 100vh;
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
-    height: 100%;
+    overflow-y: scroll;
+
+    scroll-snap-type: y mandatory;
+    -webkit-scroll-snap-type: y mandatory;
+    -ms-scroll-snap-type: y mandatory;
+
+    scroll-snap-type: mandatory;
+    -webkit-scroll-snap-type: mandatory;
+    -ms-scroll-snap-type: mandatory;
+}
+
+section {
+    min-height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
 }
 
 nav {
@@ -73,12 +88,14 @@ nav {
 
 
 #about {
-    height: 100vh;
-    width: 100vw;
     background-color: #26291A;
     padding: 0 100px;
     display: flex;
     justify-content: space-between;
+    background-image: url("../img/about_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left bottom; 
 }
 
 .left {
@@ -119,8 +136,6 @@ nav {
 }
 
 .works {
-    min-height: 100vh;
-    width: 100vw;
     background-color: blueviolet;
     padding: 0 100px;
     display: flex;
@@ -217,7 +232,6 @@ nav {
         transform: rotate(45deg) translate(-5px, -6px);
     }
     #about {
-        height: auto;
         padding: 0;
         flex-direction: column;
     }
@@ -226,6 +240,8 @@ nav {
     }
     .right {
         padding: 20px;
+        align-self: end;
+        flex: 0;
     }
     .works {
         height: auto;
