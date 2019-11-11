@@ -1,18 +1,18 @@
-html {
-    scroll-behavior: smooth;
-}
-
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
 
+html {
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
 body {
+    scroll-behavior: smooth;
     height: 100vh;
     font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden;
-    overflow-y: scroll;
 
     scroll-snap-type: y mandatory;
     -webkit-scroll-snap-type: y mandatory;
@@ -21,6 +21,9 @@ body {
     scroll-snap-type: mandatory;
     -webkit-scroll-snap-type: mandatory;
     -ms-scroll-snap-type: mandatory;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 section {
@@ -136,11 +139,22 @@ nav {
 }
 
 .works {
-    background-color: blueviolet;
     padding: 0 100px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+}
+
+#work1 {
+    background-color: rgb(150, 113, 185);
+}
+
+#work2 {
+    background-color: rgb(228, 83, 119);
+}
+
+#work3 {
+    background-color: royalblue;
 }
 
 .services {
@@ -157,7 +171,7 @@ nav {
     color: #26291A;
 }
 
-.works>button {
+.works button {
     background-color: #B7D437;
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
@@ -171,11 +185,79 @@ nav {
     cursor: pointer;
 }
 
-.works>button:hover {
+.works button:hover {
     background-color: #92AF13;
 }
 
+.others {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.box {
+    width: 700px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box div {
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.box button {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: medium;
+    letter-spacing: 1.5px;
+    border: none;
+    height: 40px;
+    width: 140px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#resume {
+    background-color: #B7D437;
+}
+
+#resume .box {
+    border: 1px solid #26291A;
+}
+
+#resume .box div {
+    color: #26291A;
+}
+
+#resume .box button {
+    background-color: #26291A;
+    color: #B7D437;
+}
+
+#resume .box button:hover {
+    background-color: #575B48;
+}
+
+#contact {
+    background-color: #26291A;
+}
+
+#contact .box {
+    border: 1px solid #D1D5BE;
+}
+
+#contact .box div {
+    color: #D1D5BE;
+}
+
+.box p {
+    color: #B7D437;
+}
 
 
 /* For mobile */
@@ -246,6 +328,10 @@ nav {
     .works {
         height: auto;
         padding: 20px;
+    }
+    .box {
+        width: 90vw;
+        height: 50vh;
     }
 }
 
