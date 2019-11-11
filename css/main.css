@@ -11,6 +11,7 @@ html {
 body {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
+    height: 100%;
 }
 
 nav {
@@ -118,10 +119,10 @@ nav {
 }
 
 .works {
-    height: 92vh;
+    min-height: 100vh;
     width: 100vw;
     background-color: blueviolet;
-    padding: 60px 100px;
+    padding: 0 100px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -129,7 +130,7 @@ nav {
 
 .services {
     font-size: 14px;
-    margin-bottom: 10px;
+    margin: 120px 0 10px 0;
     color: #575B48;
 }
 
@@ -224,6 +225,10 @@ nav {
         margin: 0;
     }
     .right {
+        padding: 20px;
+    }
+    .works {
+        height: auto;
         padding: 20px;
     }
 }

@@ -14,6 +14,7 @@
     </head>
     <body>
 
+        <!-- Header with logo and navigation -->
         <nav>
             <a href="#" class="logo">
                 <img src="img/alvinGalit_logoMark.png" alt="Alvin Galit Logo"> ALVIN GALIT
@@ -31,6 +32,7 @@
             </div>
         </nav>
 
+        <!-- About section with image and info -->
         <div id="about">
             <div class="left">
                 <img src="img/alvinGalit.jpg" alt="Picture of Alvin Galit">
@@ -48,11 +50,26 @@
             </div>
         </div>
 
+        <!-- First work sample -->
         <div id="work1" class="works">
             <p class="services">Web Design, UI Design</p>
             <div class="title">My Online Portfolio</div>
-            <button type="button">More</button>
+            <button type="button" onclick="window.location.href = '#work2';">More</button>
         </div>
+
+        <!-- Second work sample -->
+            <div id="work2" class="works">
+            <p class="services">Logo Design, Print</p>
+            <div class="title">Indigo Ball</div>
+            <button type="button" onclick="window.location.href = '#work3';">More</button>
+        </div>
+           
+        <!-- Third work sample -->
+            <div id="work3" class="works">
+            <p class="services">Logo Design, UI Design</p>
+            <div class="title">HyperMock</div>
+            <button type="button"  onclick="window.location.href = '#work1';">More</button>
+        </div>            
 
         <script src="js/app.js"></script>
     </body>
