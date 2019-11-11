@@ -10,6 +10,7 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
 nav {
@@ -26,7 +27,7 @@ nav {
 
 .logo {
     display: inline-block;
-    color: #fff;
+    color: #D1D5BE;
     text-decoration: none;
     letter-spacing: 1.5px;
 }
@@ -46,7 +47,7 @@ nav {
     display: inline-block;
     padding: 10px 20px;
     text-decoration: none;
-    color: #fff;
+    color: #D1D5BE;
     letter-spacing: 2px;
     font-size: 14px;
 }
@@ -79,10 +80,6 @@ nav {
     justify-content: space-between;
 }
 
-#about>div {
-
-}
-
 .left {
     align-self: flex-end;
     flex: 1;
@@ -106,7 +103,7 @@ nav {
 }
 
 .heading1 {
-    color: #fff;
+    color: #D1D5BE;
 }
 
 .heading2 {
@@ -114,18 +111,62 @@ nav {
 }
 
 .right p {
-    color: #fff;
+    color: #D1D5BE;
     margin-top: 40px;
     font-size: 18px;
     line-height: 28px;
 }
 
+.works {
+    height: 92vh;
+    width: 100vw;
+    background-color: blueviolet;
+    padding: 60px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.services {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #575B48;
+}
+
+.title {
+    font-size: 42px;
+    font-weight: bold;
+    width: 320px;
+    margin-bottom: 20px;
+    color: #26291A;
+}
+
+.works>button {
+    background-color: #B7D437;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: medium;
+    letter-spacing: 1.5px;
+    color: #fff;
+    border: none;
+    height: 40px;
+    width: 140px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.works>button:hover {
+    background-color: #92AF13;
+}
+
+
+
 
 /* For mobile */
 @media screen and (max-width: 768px) {
-    body {
-        overflow-x: hidden;
-    }
+    /*body {
+        overflow-x: hidden;   
+    } originally here not up there*/
     nav {
         padding: 0 20px;
     }
