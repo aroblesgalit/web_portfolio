@@ -2,15 +2,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
   }
 
 html {
-    scroll-behavior: smooth;
     overflow: hidden;
 }
 
 body {
-    scroll-behavior: smooth;
     height: 100vh;
     font-family: 'Montserrat', sans-serif;
 
@@ -123,12 +122,21 @@ nav {
     font-weight: bold;
 }
 
+.heading1, .heading2, .right p {
+    animation-name: slide-fade-in;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: backwards;
+}
+
 .heading1 {
     color: #D1D5BE;
+    animation-delay: 0.3s; 
 }
 
 .heading2 {
     color: #B7D437;
+    animation-delay: 0.5s;
 }
 
 .right p {
@@ -136,6 +144,27 @@ nav {
     margin-top: 40px;
     font-size: 18px;
     line-height: 28px;
+    animation-delay: 0.6s;
+}
+
+@keyframes slide-fade-in {
+    from {
+        transform: translateX(50%); 
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0%); 
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slide-fade-in {
+    from {
+        -webkit-transform: translateX(50%);
+    }
+    to {
+        -webkit-transform: translateX(0%);
+    }
 }
 
 .works {
