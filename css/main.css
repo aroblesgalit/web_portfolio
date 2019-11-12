@@ -37,7 +37,7 @@ nav {
     top: 0;
     min-height: 8vh;
     width: 100vw;
-    background-color: #26291A;
+    background-color: rgba(38, 41, 26, 0.8);
     padding: 0 100px;
     display: flex;
     justify-content: space-between;
@@ -146,7 +146,10 @@ nav {
 }
 
 #work1 {
-    background-color: rgb(150, 113, 185);
+    background-image: url("../img/work_indigoBall_bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top; 
 }
 
 #work2 {
@@ -154,13 +157,16 @@ nav {
 }
 
 #work3 {
-    background-color: royalblue;
+    background-image: url("../img/work_hyperMock_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top; 
 }
 
 .services {
     font-size: 14px;
     margin: 120px 0 10px 0;
-    color: #575B48;
+    color: #D1D5BE;
 }
 
 .title {
@@ -168,7 +174,7 @@ nav {
     font-weight: bold;
     width: 320px;
     margin-bottom: 20px;
-    color: #26291A;
+    color: #D1D5BE;
 }
 
 .works button {
@@ -260,6 +266,8 @@ nav {
 }
 
 
+
+
 /* For mobile */
 @media screen and (max-width: 768px) {
     /*body {
@@ -274,7 +282,7 @@ nav {
         top: 8vh;
         height: 92vh;
         width: 50vw;
-        background-color: #26291A;
+        background-color: rgba(38, 41, 26, 0.8);
         display: flex;
         flex-direction: column;
         justify-content: space-around;
