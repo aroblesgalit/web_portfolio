@@ -129,9 +129,14 @@ nav {
     animation-fill-mode: backwards;
 }
 
+.is-visible {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
 .heading1 {
     color: #D1D5BE;
-    animation-delay: 0.3s; 
+    animation-delay: 0.3s;
 }
 
 .heading2 {
@@ -371,5 +376,27 @@ nav {
         height: 50vh;
     }
 }
+
+
+
+/* Project page CSS */
+
+.splash {
+    width: 100vw;
+    height: 80vh;
+    background-color: #26291A;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.splash img {
+    flex-shrink: 0;
+
+}
+
+
+
+
 
 
