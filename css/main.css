@@ -396,7 +396,7 @@ nav {
 }
 
 .project-info {
-    padding: 40px 100px;
+    padding: 40px 100px 0 100px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -422,6 +422,7 @@ nav {
     display: flex;
     margin-bottom: 40px;
     width: 100%;
+    color: #575B48;
 }
 
 .proj-des-sec-label {
@@ -435,12 +436,56 @@ nav {
     margin-left: 40px;
 }
 
+.project-graphic-caption {
+    padding: 40px 100px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(239, 241, 227);
+}
+
+.project-graphic-caption p {
+    color: #26291A;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+.project-graphic {
+    width: 100%;
+    height: auto;
+}
+
+.work-nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 40px 100px;
+}
+
+.work-nav-buttons a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #575B48;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.work-nav-buttons a:hover {
+    color: #B7D437;
+}
+
+a.disabled {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.4;
+}
+
 
 
 /* For mobile */
 @media screen and (max-width: 768px) {
     .project-info {
-        padding: 40px 20px;
+        padding: 40px 20px 0 20px;
     }
     .project-title {
         text-align: left;
@@ -455,7 +500,18 @@ nav {
     .proj-des-section p {
         margin: 0;
     }
-
+    .project-graphic-caption {
+        padding: 0;
+    }
+    .project-graphic-caption p {
+        padding: 0 20px;
+    }
+    .work-nav-buttons {
+        padding: 40px 20px;
+    }
+    .work-nav-buttons a {
+        letter-spacing: 1px;
+    }
 }
 
 
