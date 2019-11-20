@@ -386,11 +386,13 @@ nav {
     height: 80vh;
     background-color: #26291A;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .splash img {
     object-fit: cover;
-    object-position: center;
     max-width: 100%;
     min-height: 100%;
 }
