@@ -390,7 +390,7 @@ nav {
 
 .splash img {
     object-fit: cover;
-    object-position: 0 0;
+    object-position: center;
     max-width: 100%;
     min-height: 100%;
 }
@@ -453,6 +453,7 @@ nav {
 .project-graphic {
     width: 100%;
     height: auto;
+    margin-bottom: 4px;
 }
 
 .work-nav-buttons {
@@ -501,7 +502,7 @@ a.disabled {
         margin: 0;
     }
     .project-graphic-caption {
-        padding: 0;
+        padding: 20px 0;
     }
     .project-graphic-caption p {
         padding: 0 20px;
