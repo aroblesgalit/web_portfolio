@@ -31,7 +31,7 @@ section {
     scroll-snap-align: start;
 }
 
-nav {
+header {
     position: fixed;
     top: 0;
     min-height: 8vh;
@@ -42,6 +42,19 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
+
+/*
+nav {
+    position: fixed;
+    top: 0;
+    min-height: 8vh;
+    width: 100vw;
+    background-color: rgba(38, 41, 26, 0.8);
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}*/
 
 .logo {
     display: inline-block;
@@ -307,7 +320,7 @@ nav {
     /*body {
         overflow-x: hidden;   
     } originally here not up there*/
-    nav {
+    header {
         padding: 0 20px;
     }
     .nav-links {
