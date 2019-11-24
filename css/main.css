@@ -200,7 +200,10 @@ nav {
 }
 
 #work2 {
-    background-color: rgb(228, 83, 119);
+    background-image: url("../img/work_myOnlinePortfolio_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top; 
 }
 
 #work3 {
