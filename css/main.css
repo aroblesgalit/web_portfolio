@@ -41,6 +41,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1000;
 }
 
 /*
@@ -383,6 +384,12 @@ nav {
         align-self: end;
         flex: 0;
     }
+    .right p {
+        margin-top: 56px;
+        font-size: 14px;
+        line-height: 24px;
+        text-shadow: 0 0 16px #000000;
+    }
     .works {
         height: auto;
         padding: 20px;
@@ -453,6 +460,111 @@ nav {
     flex: 2;
     margin-left: 40px;
 }
+
+
+
+/* START - experiment for brainstorm section - START */
+
+.brainstorm {
+    padding: 40px 100px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.hm-brainstorm {
+    background-color: #264c7a;
+    color: #fff;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.subheading {
+    font-size: 22px;
+}
+
+.note {
+    font-size: 16px;
+}
+
+.brainstorm ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.note li:first-child {
+    margin-top: 10px;
+}
+
+.note li::before {
+    content: '\2014\a0  ';
+}
+
+.brainstorm-words {
+    display: flex;
+    margin-top: 40px;
+}
+
+.words {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+
+.word-subheading {
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.word-subheading::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+}
+
+.word {
+    text-align: center;
+}
+
+.word:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.word ul li:first-child {
+    margin-top: 10px;
+}
+
+.word li:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.possible-combo {
+    border: 2px solid #fff;
+    padding: 20px;
+}
+
+/* For mobile */
+@media screen and (max-width: 768px) {
+    .brainstorm {
+        padding: 40px 20px;
+    }    
+}
+
+/* END - experiment for brainstorm section - END */
+
+
+
 
 .project-graphic-caption {
     padding: 40px 100px;
