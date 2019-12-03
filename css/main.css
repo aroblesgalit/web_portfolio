@@ -477,6 +477,11 @@ nav {
     color: #fff;
 }
 
+.ib-brainstorm {
+    background-color: #283781;
+    color: #fff;
+}
+
 .section-title {
     font-size: 32px;
     font-weight: bold;
@@ -567,17 +572,32 @@ nav {
 
 
 .project-graphic-caption {
-    padding: 40px 100px;
+    padding: 40px 0;
     width: 100vw;
     display: flex;
     flex-direction: column;
-    background-color: rgb(239, 241, 227);
+    background-color: #fff;
 }
 
 .project-graphic-caption p {
     color: #26291A;
+    padding: 0 100px;
     font-size: 14px;
     margin-bottom: 14px;
+    position: relative;
+}
+
+.project-graphic-caption p::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 10px solid #fff;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    position: absolute;
+    bottom: -34px;
+    left: 100px;
 }
 
 .project-graphic {
@@ -636,6 +656,9 @@ a.disabled {
     }
     .project-graphic-caption p {
         padding: 0 20px;
+    }
+    .project-graphic-caption p::after {
+        left: 20px;
     }
     .work-nav-buttons {
         padding: 40px 20px;
