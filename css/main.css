@@ -214,6 +214,13 @@ nav {
     background-position: left top; 
 }
 
+#work4 {
+    background-image: url("../img/work_otherLogos_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top; 
+}
+
 .services {
     font-size: 14px;
     margin: 120px 0 10px 0;
@@ -570,6 +577,40 @@ nav {
 
 
 
+.logo-section {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.solar-twist img {
+    width: 600px;
+    height: auto;
+}
+
+.solar-twist {
+    background-color: #f4f4f4;
+}
+
+.careosity img {
+    width: 400px;
+    height: auto;
+}
+
+.careosity {
+    background-color: #1b1f2b;
+}
+
+.timmy-scott img {
+    width: 350px;
+    height: auto;
+}
+
+.timmy-scott {
+    background-color: #0d0d0d;
+}
 
 .project-graphic-caption {
     padding: 40px 0;
@@ -577,6 +618,13 @@ nav {
     display: flex;
     flex-direction: column;
     background-color: #fff;
+}
+
+.pattern-bg {
+    background-image: url("../img/hyperMock_patterns.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center; 
 }
 
 .project-graphic-caption p {
@@ -650,6 +698,15 @@ a.disabled {
     }
     .proj-des-section p {
         margin: 0;
+    }
+    .solar-twist img {
+        width: 90vw;
+    }
+    .careosity img {
+        width: 300px;
+    }
+    .timmy-scott img {
+        width: 280px;
     }
     .project-graphic-caption {
         padding: 20px 0;
