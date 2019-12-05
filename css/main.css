@@ -600,7 +600,7 @@ footer {
     height: auto;
 }
 
-.solar-twist {
+.solar-twist, .careosity {
     background-color: #f4f4f4;
 }
 
@@ -609,12 +609,16 @@ footer {
     height: auto;
 }
 
-.careosity {
-    background-color: #f4f4f4;
+.timmy-scott {
+    background-color: #3c0e54;
 }
 
-.polynomial, .timmy-scott, .trans-pride {
+.polynomial {
     background-color: #101526;
+}
+
+.trans-pride {
+    background-color: #0f204c;
 }
 
 .vertical-shape img {
