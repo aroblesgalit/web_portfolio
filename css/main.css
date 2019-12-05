@@ -600,7 +600,7 @@ footer {
     height: auto;
 }
 
-.solar-twist, .careosity {
+.solar-twist, .careosity, .sips-and-giggles, .prof-mixer {
     background-color: #f4f4f4;
 }
 
@@ -619,6 +619,10 @@ footer {
 
 .trans-pride {
     background-color: #0f204c;
+}
+
+.life-games {
+    background-color: #A41C43;
 }
 
 .vertical-shape img {
@@ -658,7 +662,7 @@ footer {
     border-right: 10px solid transparent;
     border-left: 10px solid transparent;
     position: absolute;
-    bottom: -34px;
+    bottom: -33px;
     left: 100px;
 }
 
