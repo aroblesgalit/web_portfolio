@@ -28,7 +28,7 @@ body {
 section {
     min-height: 100vh;
     width: 100vw;
-    scroll-snap-align: start;
+    scroll-snap-align: center;
 }
 
 header {
@@ -323,6 +323,16 @@ nav {
     color: #B7D437;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 40px;
+    font-size: 12px;
+    color: #575B48;
+    background-color: #26291A;
+}
 
 
 
@@ -585,7 +595,7 @@ nav {
     align-items: center;
 }
 
-.solar-twist img {
+.horizontal-shape img {
     width: 600px;
     height: auto;
 }
@@ -594,22 +604,22 @@ nav {
     background-color: #f4f4f4;
 }
 
-.careosity img {
+.box-shape img {
     width: 400px;
     height: auto;
 }
 
 .careosity {
-    background-color: #1b1f2b;
+    background-color: #f4f4f4;
 }
 
-.timmy-scott img {
+.polynomial, .timmy-scott, .trans-pride {
+    background-color: #101526;
+}
+
+.vertical-shape img {
     width: 350px;
     height: auto;
-}
-
-.timmy-scott {
-    background-color: #0d0d0d;
 }
 
 .project-graphic-caption {
@@ -699,13 +709,13 @@ a.disabled {
     .proj-des-section p {
         margin: 0;
     }
-    .solar-twist img {
+    .horizontal-shape img {
         width: 90vw;
     }
-    .careosity img {
+    .box-shape img {
         width: 300px;
     }
-    .timmy-scott img {
+    .vertical-shape img {
         width: 280px;
     }
     .project-graphic-caption {
