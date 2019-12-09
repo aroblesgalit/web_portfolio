@@ -287,7 +287,7 @@ nav {
 }
 
 #resume {
-    background-color: #B7D437;
+    background-color: #F5F5F5;
 }
 
 #resume .box {
@@ -299,12 +299,12 @@ nav {
 }
 
 #resume .box button {
-    background-color: #26291A;
+    background-color: #1c1c1c;
     color: #B7D437;
 }
 
 #resume .box button:hover {
-    background-color: #575B48;
+    background-color: #26291A;
 }
 
 #contact {
@@ -402,7 +402,8 @@ footer {
         flex: 0;
     }
     .right p {
-        margin-top: 56px;
+        margin-top: 40px;
+        margin-bottom: 40px;
         font-size: 14px;
         line-height: 24px;
         text-shadow: 0 0 16px #000000;
@@ -479,24 +480,76 @@ footer {
 }
 
 
+/* START - project content - START */
+
+.proj-content {
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.content-section-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #D1D5BE;
+    text-align: center;
+    margin: 150px 0 50px 0;
+}
+
+.proj-content p {
+    font-size: 14px;
+    text-align: center;
+    color: #575B48;
+    margin-bottom: 50px;
+    width: 700px;
+    align-self: center;
+}
+
+.section-subtitle {
+    font-size: 28px;
+    font-weight: bold;
+    color: #D1D5BE;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.margin-top-50 {
+    margin-top: 80px;
+}
+
+/* For mobile */
+@media screen and (max-width: 768px) {
+    .content-section-title {
+        margin: 70px 0 34px 0;
+    }   
+    .proj-content p {
+        width: 100vw;
+        padding: 0 20px;
+    }
+    .section-subtitle {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }    
+    .margin-top-50 {
+        margin-top: 40px;
+    }
+}
+
+/* END - project content - END */
+
+
 
 /* START - experiment for brainstorm section - START */
 
 .brainstorm {
     padding: 40px 100px;
-    width: 100vw;
+    width: 80vw;
     display: flex;
     flex-direction: column;
-}
-
-.hm-brainstorm {
-    background-color: #264c7a;
-    color: #fff;
-}
-
-.ib-brainstorm {
-    background-color: #283781;
-    color: #fff;
+    align-self: center;
+    border: 2px solid #D1D5BE;
+    color: #575B48;    
 }
 
 .section-title {
@@ -550,7 +603,7 @@ footer {
     display: block;
     height: 2px;
     width: 100%;
-    background-color: #fff;
+    background-color: #D1D5BE;
     position: absolute;
     bottom: 0;
 }
@@ -572,14 +625,15 @@ footer {
 }
 
 .possible-combo {
-    border: 2px solid #fff;
+    border: 2px solid #D1D5BE;
     padding: 20px;
 }
 
 /* For mobile */
 @media screen and (max-width: 768px) {
     .brainstorm {
-        padding: 40px 20px;
+        padding: 20px;
+        width: 94vw;
     }    
 }
 
@@ -647,10 +701,14 @@ footer {
 
 .project-graphic-caption p {
     color: #26291A;
-    padding: 0 100px;
+    padding: 0 20%;
     font-size: 14px;
     margin-bottom: 14px;
     position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.6;
 }
 
 .project-graphic-caption p::after {
@@ -663,7 +721,6 @@ footer {
     border-left: 10px solid transparent;
     position: absolute;
     bottom: -33px;
-    left: 100px;
 }
 
 .project-graphic {
@@ -731,9 +788,6 @@ a.disabled {
     }
     .project-graphic-caption p {
         padding: 0 20px;
-    }
-    .project-graphic-caption p::after {
-        left: 20px;
     }
     .work-nav-buttons {
         padding: 40px 20px;
