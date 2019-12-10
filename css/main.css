@@ -487,6 +487,7 @@ footer {
     display: flex;
     flex-direction: column;
     width: 100vw;
+    align-items: center;
 }
 
 .content-section-title {
@@ -503,7 +504,6 @@ footer {
     color: #575B48;
     margin-bottom: 50px;
     width: 700px;
-    align-self: center;
 }
 
 .section-subtitle {
@@ -516,6 +516,14 @@ footer {
 
 .margin-top-50 {
     margin-top: 80px;
+}
+
+.img-responsive-flyer {
+    width: 50vw;
+}
+
+.img-responsive-flyer img {
+    width: 100%;
 }
 
 /* For mobile */
@@ -533,6 +541,9 @@ footer {
     }    
     .margin-top-50 {
         margin-top: 40px;
+    }
+    .img-responsive-flyer {
+        width: 90vw;
     }
 }
 
