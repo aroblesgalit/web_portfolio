@@ -44,19 +44,6 @@ header {
     z-index: 1000;
 }
 
-/*
-nav {
-    position: fixed;
-    top: 0;
-    min-height: 8vh;
-    width: 100vw;
-    background-color: rgba(38, 41, 26, 0.8);
-    padding: 0 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}*/
-
 .logo {
     display: inline-block;
     color: #D1D5BE;
@@ -248,7 +235,7 @@ nav {
     font-family: 'Montserrat', sans-serif;
     font-weight: medium;
     letter-spacing: 1.5px;
-    color: #fff;
+    color: #26291A;
     border: none;
     height: 40px;
     width: 140px;
@@ -350,6 +337,9 @@ footer {
     } originally here not up there*/
     header {
         padding: 0 20px;
+    }
+    header span {
+        display: none;
     }
     .nav-links {
         position: absolute;
@@ -503,6 +493,7 @@ footer {
     color: #D1D5BE;
     text-align: center;
     margin: 150px 0 50px 0;
+    padding: 0 20px;
 }
 
 .proj-content p {
@@ -511,6 +502,7 @@ footer {
     color: #575B48;
     margin-bottom: 50px;
     width: 700px;
+    padding: 0 20px;
 }
 
 .section-subtitle {
@@ -519,6 +511,7 @@ footer {
     color: #D1D5BE;
     text-align: center;
     margin-bottom: 50px;
+    padding: 0 20px;
 }
 
 .margin-top-50 {
@@ -767,6 +760,24 @@ footer {
 }
 
 .work-nav-buttons a:hover {
+    color: #B7D437;
+}
+
+.work-nav-buttons-top {
+    display: flex;
+    justify-content: space-between;
+    width: 125px;
+}
+
+.work-nav-buttons-top a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #D1D5BE;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.work-nav-buttons-top a:hover {
     color: #B7D437;
 }
 
